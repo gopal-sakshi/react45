@@ -5,12 +5,14 @@ export default function Football() {
     const shoot = (a, b) => {
         console.log("b represents event type ===>", a, b.type);
     }
-  
+    const style23 = { backgroundColor: 'yellow', color: 'blue' }
     return (
         <div>
-            <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
-            <Garage />
+            <button style={{color:'red'}} onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+            <Garage/>
             <Form23 />
+            <Form24 />
+            <h3 style={style23}>apply style23</h3>
         </div>
         
     );
@@ -63,5 +65,40 @@ function Form23() {
         </div>
 
 
+    )
+}
+
+function Form24() {
+    const [inputs, setInputs] = useState({});
+    const handleChange = (event) => {
+        console.log("change triggered ====> ", event.target.name, event.target.value)
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name]: value}))
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("after submit ===> ", inputs);
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>Enter your name:
+            <input 
+                type="text" 
+                name="username" 
+                value={inputs.username || ""} 
+                onChange={handleChange}/>
+            </label>
+            <label>Enter your age:
+            <input 
+                type="number" 
+                name="age" 
+                value={inputs.age || ""} 
+                onChange={handleChange}/>
+            </label>
+            <input type="submit" />
+        </form>
     )
 }

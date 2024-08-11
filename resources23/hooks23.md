@@ -47,3 +47,11 @@ useDebugValue       lets you customize the label React DevTools displays for you
 useId               lets a component associate a unique ID with itself. Typically used with accessibility APIs.
 useSyncExternalStore lets a component subscribe to an external store.
 useActionState      allows you to manage state of actions.
+
+===================================================================================
+
+3 rules for hooks
+
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional
