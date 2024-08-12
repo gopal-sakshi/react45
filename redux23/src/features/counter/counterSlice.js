@@ -1,4 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
+/*
+    createSlice ==> A function that accepts
+    - an initial state
+    - an object full of reducer functions
+    - "slice name"
+    --- automatically generates "action creators" and "action types" that correspond to the reducers and state.
+*/
 
 export const counterSlice = createSlice({
     name: 'counter',
@@ -6,7 +13,7 @@ export const counterSlice = createSlice({
         value: 0,
     },
     reducers: {
-        increment: (state) => {
+        increment23: (state) => {
             console.log("state will be incremented ", state);
             // Redux Toolkit allows us to write "mutating" logic in reducers. It
             // doesn't actually mutate the state because it uses the Immer library,
@@ -27,6 +34,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment23, decrement, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer

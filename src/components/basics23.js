@@ -42,6 +42,7 @@ function Garage() {
 
 function Form23() {
     const [name23, setName11] = useState("");
+    console.log("form23 lo unnaa, input change ayindi, so nenu malli render ayyaa ", name23);
     
     function doStuff11(e) {
         console.log("input ==> ", e.target.value);
@@ -63,8 +64,6 @@ function Form23() {
             </form>
             <h3> rcvd value === {name23} </h3>
         </div>
-
-
     )
 }
 
