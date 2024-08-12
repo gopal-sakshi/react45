@@ -21,6 +21,9 @@ import StateSnapshot13 from './interactivity23/state13_snapshot';
 import State15Batches from './interactivity23/state15_batches';
 import State16UpdateObj from './interactivity23/state16_updateObj';
 import State19UpdateArr from './interactivity23/state19_updateArray1';
+import ManageState11 from './managing_state23/react11';
+import ManageState12 from './managing_state23/react12_my_solution';
+import React13Form from './managing_state23/react13_form';
 
 export default <Router>
     <div className="App" >
@@ -41,6 +44,9 @@ export default <Router>
             <Route exact path="/state15_batches" component={State15Batches}></Route>
             <Route exact path="/state16_updateObj" component={State16UpdateObj}></Route>
             <Route exact path="/state19_updateArray1" component={State19UpdateArr}></Route>
+            <Route exact path="/manageState11" component={ManageState11}></Route>
+            <Route exact path="/manageState12" component={ManageState12}></Route>
+            <Route exact path="/react13_form" component={React13Form}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
             <Route exact path="/rxjs23" component={Rxjs23}></Route>
             <Route exact path="/">home route babai</Route>
@@ -76,6 +82,11 @@ function Links() {
                 <li> <Link to="/state15_batches">state15 batches</Link> </li>
                 <li> <Link to="/state16_updateObj">state16 update Obj</Link> </li>
                 <li> <Link to="/state19_updateArray1">state19_updateArray1</Link> </li>
+            </ul>
+            <ul>
+                <li> <Link to="/manageState11">manageState11 </Link></li>
+                <li> <Link to="/manageState12">manageState12 </Link></li>
+                <li> <Link to="/react13_form">react13_form </Link></li>
             </ul>
         </div>
     )

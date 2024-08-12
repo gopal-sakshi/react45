@@ -5,4 +5,29 @@
     width: 50%;
     height: auto;
 }
+
 /*****************************************************************************/
+
+.background23 {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.background--active23 {
+    background: #a6b5ff;
+}
+
+.picture23 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+}
+
+.picture--active23 {
+    border: 5px solid #a6b5ff;
+}
