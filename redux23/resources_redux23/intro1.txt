@@ -1,0 +1,5 @@
+npx create-react-app redux23
+npm install @reduxjs/toolkit react-redux
+
+Create a file named src/app/store.js
+Import the configureStore API from Redux Toolkit
