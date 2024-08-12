@@ -6,7 +6,8 @@ import TicTacToe from './components/tic-tac-toe';
 import Dummy23 from './components/dummy23';
 import Basics23 from './components/basics23';
 import Memo23 from './components/memo23';
-import Hooks23 from './hooks23/use-effect';
+import Hooks23 from './hooks23/hooks23';
+import Rxjs23 from './rxjs23/1';
 
 export default <Router>
     <div className="App" >
@@ -17,6 +18,7 @@ export default <Router>
             <Route exact path="/basics23" component={Basics23}></Route>
             <Route exact path="/memo23" component={Memo23}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
+            <Route exact path="/rxjs23" component={Rxjs23}></Route>
             <Route exact path="/">home route babai</Route>
         </Switch>
     </div>
@@ -34,6 +36,7 @@ function Links() {
             </ul>
             <ul>
             <li> <Link to="/hooks23">Hooks23</Link> </li>
+            <li> <Link to="/rxjs23">Rxjs23</Link> </li>
             </ul>
         </div>
     )

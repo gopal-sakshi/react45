@@ -1,8 +1,10 @@
+import { useState } from "react";
+
 function FavoriteColor() {
     const [color, setColor] = useState("black");
     return (
         <>
-            <h1>My favorite color is {color}!</h1>
+            <h1>My favorite color is <u>{color}</u>!</h1>
             <button type="button" onClick={() => setColor("blue")} >Blue</button>
             <button type="button" onClick={() => setColor("red")} >Red</button>
         </>
@@ -37,7 +39,7 @@ export default function Car() {
         <>
             <FavoriteColor />
             <h1>My {car.brand}</h1>
-            <p> It is a {car.color} {car.model} from {car.year} </p>
+            <p> It is a <u>{car.color}</u> <strong>{car.model}</strong> from <i>{car.year}</i> </p>
             <button type="button" onClick={updateColor} >Blue</button>
         </>
     )

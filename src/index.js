@@ -21,6 +21,6 @@ root.render(
 );
 
 
-const myElement11 = React.createElement('h1', {}, 'I do not use JSX!');
-const no_jsx23 = createRoot(document.getElementById('no_jsx23'));
-no_jsx23.render(myElement11);
+// const myElement11 = React.createElement('h1', {}, 'I do not use JSX!');
+// const no_jsx23 = createRoot(document.getElementById('no_jsx23'));
+// no_jsx23.render(myElement11);
