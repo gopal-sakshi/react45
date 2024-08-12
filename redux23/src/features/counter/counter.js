@@ -3,7 +3,11 @@ import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './counterSlice'
 
 export function Counter() {
-    const count = useSelector((state) => state.counter.value)
+    console.log("counter component malli render ayindi");
+    const count = useSelector((state) => {
+        console.log("ipudu kotha count ===> ", state.counter.value)
+        return state.counter.value;
+    })
     const dispatch = useDispatch()
 
     return (
@@ -11,7 +15,7 @@ export function Counter() {
             <button onClick={() => dispatch(increment())}>
                 Increment
             </button>
-            <span>{count}</span>
+            <div><span>{count}</span></div>
             <button onClick={() => dispatch(decrement())}>
                 Decrement
             </button>
