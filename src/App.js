@@ -33,7 +33,8 @@ import Reducer11 from './managing_state23/reducer11';
 import Reducer12 from './managing_state23/reducer12';
 import Reducer13 from './managing_state23/reducer13';
 import Reducer15 from './managing_state23/reducer15_context';
-import Practice23 from './components/practice_addTasks/entry1';
+// import Practice23 from './components/practice_addTasks/entry1';     // uses event handlers
+import Practice23 from './components/practice_addTasks/entry2';     // uses - reducers, dispatch stuff
 
 export default <Router>
     <div className="App" >

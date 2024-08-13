@@ -1,7 +1,12 @@
 import { useState } from 'react';
-import AddTask from './entry1_AddTask';
-import TaskList from './entry1_TaskList';
+import AddTask from './entry2_AddTask';
+import TaskList from './entry2_TaskList';
 
+/*
+    entry1 & entry2 are almost same...
+    - entry1.js uses event handlers
+    - entry2.js uses reducers & dispatch
+*/
 export default function() {
     const [tasks_fromState, setTasks] = useState(tasks23);
     
@@ -37,9 +42,9 @@ export default function() {
 }
 
 const tasks23 = [
-    { id: 0, name: 'brush teeth', done23: true },
-    { id: 1, name: 'take bath', done23: false },
-    { id: 2, name: 'eat food', done23: false }
+    { id: 0, name: 'brush teeth2', done23: true },
+    { id: 1, name: 'take bath2', done23: false },
+    { id: 2, name: 'eat food2', done23: false }
 ]
 
 let nextId = 3;
