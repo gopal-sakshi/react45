@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useReducer } from 'react';     // instead of useReducer ===> see reducer14_from_scratch.js
 import Chat from './reducer13_Chat.js';
 import ContactList from './reducer13_ContactList.js';
 import { initialState, messengerReducer } from './reducer13_msgReducer';

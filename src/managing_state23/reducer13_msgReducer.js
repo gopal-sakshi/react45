@@ -18,6 +18,12 @@ export function messengerReducer(state, action) {
                 message: action.message,
             };
         }
+        case 'show_alert_clear_input': {
+            return {
+                ...state,
+                message: action.message,
+            }
+        }
         default: {
             throw Error('Unknown action: ' + action.type);
         }

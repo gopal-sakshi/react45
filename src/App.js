@@ -32,6 +32,8 @@ import React14_Image from './managing_state23/react14_changeImg';
 import Reducer11 from './managing_state23/reducer11';
 import Reducer12 from './managing_state23/reducer12';
 import Reducer13 from './managing_state23/reducer13';
+import Reducer15 from './managing_state23/reducer15_context';
+import Practice23 from './components/practice_addTasks/entry1';
 
 export default <Router>
     <div className="App" >
@@ -63,6 +65,8 @@ export default <Router>
             <Route exact path="/reducer11" component={Reducer11}></Route>
             <Route exact path="/reducer12" component={Reducer12}></Route>
             <Route exact path="/reducer13" component={Reducer13}></Route>
+            <Route exact path="/reducer15" component={Reducer15}></Route>
+            <Route exact path="/practice23" component={Practice23}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
             <Route exact path="/rxjs23" component={Rxjs23}></Route>
             <Route exact path="/">home route babai</Route>
@@ -113,6 +117,8 @@ function Links() {
                 <li> <Link to="/reducer11">reducer11 </Link></li>
                 <li> <Link to="/reducer12">reducer12 </Link></li>
                 <li> <Link to="/reducer13">reducer13 </Link></li>
+                <li> <Link to="/reducer15">reducer15 </Link></li>
+                <li> <Link to="/practice23">practice23 </Link></li>
             </ul>
         </div>
     )
