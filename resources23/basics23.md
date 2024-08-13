@@ -19,3 +19,11 @@ This way, if an item is updated or removed, only that item will be re-rendered i
 In HTML, form data is usually handled by the DOM.
 In React, form data is usually handled by the components.
 
+===============================================================================================
+
+a state is private to the component
+but the state is not stored in the component
+React itself stores the state somewhere in its memory
+when the component is destroyed/un-rendered ===> React destroys its state
+
+

@@ -24,6 +24,14 @@ import State19UpdateArr from './interactivity23/state19_updateArray1';
 import ManageState11 from './managing_state23/react11';
 import ManageState12 from './managing_state23/react12_my_solution';
 import React13Form from './managing_state23/react13_form';
+import React14LiftingState from './managing_state23/react14_lifting_state';
+import React14SyncIp from './managing_state23/react14_sync_inputs';
+import React14_Search23 from './managing_state23/react14_search23';
+import React14_SwapNames from './managing_state23/react14_swap_names';
+import React14_Image from './managing_state23/react14_changeImg';
+import Reducer11 from './managing_state23/reducer11';
+import Reducer12 from './managing_state23/reducer12';
+import Reducer13 from './managing_state23/reducer13';
 
 export default <Router>
     <div className="App" >
@@ -47,6 +55,14 @@ export default <Router>
             <Route exact path="/manageState11" component={ManageState11}></Route>
             <Route exact path="/manageState12" component={ManageState12}></Route>
             <Route exact path="/react13_form" component={React13Form}></Route>
+            <Route exact path="/react14_lift_state" component={React14LiftingState}></Route>
+            <Route exact path="/react14_sync_ip" component={React14SyncIp}></Route>
+            <Route exact path="/react14_search23" component={React14_Search23}></Route>
+            <Route exact path="/react14_swap_names" component={React14_SwapNames}></Route>
+            <Route exact path="/react14_image" component={React14_Image}></Route>
+            <Route exact path="/reducer11" component={Reducer11}></Route>
+            <Route exact path="/reducer12" component={Reducer12}></Route>
+            <Route exact path="/reducer13" component={Reducer13}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
             <Route exact path="/rxjs23" component={Rxjs23}></Route>
             <Route exact path="/">home route babai</Route>
@@ -87,6 +103,16 @@ function Links() {
                 <li> <Link to="/manageState11">manageState11 </Link></li>
                 <li> <Link to="/manageState12">manageState12 </Link></li>
                 <li> <Link to="/react13_form">react13_form </Link></li>
+                <li> <Link to="/react14_lift_state">react14_lift_state </Link></li>
+                <li> <Link to="/react14_sync_ip">react14_sync_ip </Link></li>
+                <li> <Link to="/react14_search23">react14_search23 </Link></li>
+                <li> <Link to="/react14_swap_names">react14_swap_names </Link></li>
+                <li> <Link to="/react14_image">react14_img </Link></li>
+            </ul>
+            <ul>
+                <li> <Link to="/reducer11">reducer11 </Link></li>
+                <li> <Link to="/reducer12">reducer12 </Link></li>
+                <li> <Link to="/reducer13">reducer13 </Link></li>
             </ul>
         </div>
     )
