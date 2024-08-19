@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./actionTypes";
+import { ADD_TODO, TOGGLE_TODO, SET_FILTER, USE_STRING23 } from "./actionTypes";
 
 let nextTodoId = 0;
 
@@ -15,4 +15,15 @@ export const toggleTodo = id => ({
     payload: { id }
 });
 
-export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
+export const setFilter = filter => ({ 
+    type: SET_FILTER, 
+    payload: { filter } 
+});
+
+export const action23 = param1 => ({
+    type: USE_STRING23,
+    payload: {
+        param1,
+        time23: new Date().toISOString()
+    }
+})

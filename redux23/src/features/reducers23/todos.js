@@ -8,6 +8,7 @@ const initialState = {
 export default function (state = initialState, action) {
     switch (action.type) {
         case ADD_TODO: {
+            console.log("add todo called23")
             const { id, content } = action.payload;
             return {
                 ...state,
