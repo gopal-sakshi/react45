@@ -1,13 +1,14 @@
-// "useSelector" = to get current state; "useDispatch" = start a trigger to update state
+import { memo } from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
 
 import { decrement, increment23 } from './counterSlice';          // these are "actions"
 
-export function Counter() {
+const CounterWithMemo = () => {
     console.log("counter component malli render ayindi");
-    const count = useSelector((state) => {
-        console.log("ipudu kotha count ===> ", state)
-        return state.counter.value;
+    const count = useSelector((state23) => {
+        console.log("ipudu kotha count ===> ", state23)
+        return state23.counter44.value;
     })
     const dispatch = useDispatch()
 
@@ -24,3 +25,5 @@ export function Counter() {
         </div>
     )
 }
+
+export default memo(CounterWithMemo)
