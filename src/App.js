@@ -35,6 +35,9 @@ import Reducer13 from './managing_state23/reducer13';
 import Reducer15 from './managing_state23/reducer15_context';
 // import Practice23 from './components/practice_addTasks/entry1';     // uses event handlers
 import Practice23 from './components/practice_addTasks/entry2';     // uses - reducers, dispatch stuff
+import ApiCall23 from './components/common23/apiCall23';
+import ApiCall24 from './components/common23/apiCall24_react-query';
+import ApiCall25 from './components/common23/apiCall25_react-query';
 
 export default <Router>
     <div className="App" >
@@ -70,6 +73,9 @@ export default <Router>
             <Route exact path="/practice23" component={Practice23}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
             <Route exact path="/rxjs23" component={Rxjs23}></Route>
+            <Route exact path="/apiCall23" component={ApiCall23}></Route>
+            <Route exact path="/apiCall24" component={ApiCall24}></Route>
+            <Route exact path="/apiCall25" component={ApiCall25}></Route>
             <Route exact path="/">home route babai</Route>
         </Switch>
     </div>
@@ -120,6 +126,11 @@ function Links() {
                 <li> <Link to="/reducer13">reducer13 </Link></li>
                 <li> <Link to="/reducer15">reducer15 </Link></li>
                 <li> <Link to="/practice23">practice23 </Link></li>
+            </ul>
+            <ul>
+                <li><Link to="/apiCall23">ApiCall23</Link></li>
+                <li><Link to="/apiCall24">ApiCall24</Link></li>
+                <li><Link to="/apiCall25">ApiCall25</Link></li>
             </ul>
         </div>
     )

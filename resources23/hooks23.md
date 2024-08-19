@@ -57,3 +57,8 @@ Hooks can only be called at the top level of a component.
 Hooks cannot be conditional
 
 
+hooks should only be called at the top level of a React functional component 
+because they must be guaranteed to run every time the component function is run.
+Don’t call Hooks inside loops, conditions, nested functions
+
+in dev mode -- useEffect runs twice
