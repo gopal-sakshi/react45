@@ -12,7 +12,9 @@ const ActionReducer23 = ({ info23, action23 }) => {
                     console.log("action_reducer23");
                     action23('real_madrid23')
                     console.log("why_its_not_working");
-                }}>action_reducer23</button>
+                }}> 
+                action_reducer23 
+            </button>
         </>
     )
 }

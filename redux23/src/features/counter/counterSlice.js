@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
+import axios from 'axios';
+
 /*
     createSlice ==> A function that accepts
     - an initial state
@@ -30,10 +32,48 @@ export const counterSlice = createSlice({
             console.log("state will change by amount ==> ", state, action);
             state.value += action.payload
         },
+        timeFromApi: (state, action) => {
+            console.log("reducer time ni fetch chesindi ===> ", state, action);
+            state.time23 = action.payload.time23
+        }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment23, decrement, incrementByAmount } = counterSlice.actions
+export const { increment23, decrement, incrementByAmount, timeFromApi } = counterSlice.actions
+
+
+// The function below is called a thunk and allows us to perform async logic. It
+// can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
+// will call the thunk with the `dispatch` function as the first argument. Async
+// code can then be executed and other actions can be dispatched
+export const incrementAsync1 = (amount) => (dispatch) => {
+    setTimeout(() => {
+        dispatch(incrementByAmount(amount))
+    }, 1000)
+}
+
+export const incrementAsync2 = (amount) => {
+    return function (dispatch) {
+        setTimeout(() => {
+            dispatch(incrementByAmount(amount))
+        }, 1000)
+    }
+}
+
+export const makeApiCall23 = (amount) => {
+    return async function (dispatch) {
+        return axios.get(`http://localhost:8081/json23`)
+            .then(res => {
+                if (res.status !== 200) {
+                    throw new Error("api call tannindi");
+                } else {
+                    dispatch(timeFromApi(res.data));
+                    return res;
+                }
+            })
+            .catch(err => {});
+    }
+}
 
 export default counterSlice.reducer
