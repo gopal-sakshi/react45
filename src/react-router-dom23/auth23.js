@@ -7,7 +7,10 @@ import {
     Redirect,
     useHistory,
     useLocation
-} from "react-router-dom";
+} from "react-router-dom-v5";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 export default function AuthExample() {
@@ -27,6 +30,7 @@ export default function AuthExample() {
                     </Switch>
                 </div>
             </Router>
+            <ToastContainer />
         </ProvideAuth>
     );
 }
@@ -35,11 +39,11 @@ const fakeAuth = {
     isAuthenticated: false,
     signin(cb) {
         fakeAuth.isAuthenticated = true;
-        setTimeout(cb, 100); // fake async
+        setTimeout(cb, 1000); // fake async
     },
     signout(cb) {
         fakeAuth.isAuthenticated = false;
-        setTimeout(cb, 100);
+        setTimeout(cb, 1000);
     }
 };
 
@@ -143,6 +147,7 @@ function LoginPage() {
     let login = () => {
         auth.signin(() => {
             history.replace(from);
+            toast.success("Login ayyaavu abbaayi");
         });
     };
 

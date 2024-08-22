@@ -4,26 +4,28 @@ import {
     Switch,
     Route,
     Link,
+    // useNavigate,                 // useNavigate is deprecated
     useRouteMatch,
     useParams
-} from "react-router-dom";
+} from "react-router-dom-v5";
 
 function Links23() {
     return (
-        <>
-            <nav>
-                <ul>
-                    <li> <Link to="/">Home</Link> </li>
-                    <li> <Link to="/about">About</Link> </li>
-                    <li> <Link to="/users">Users</Link> </li>
-                    <li> <Link to="/topics">Topics11</Link> </li>
-                </ul>
-            </nav>
-        </>
+        <nav>
+            <h3> react-router-dom v5 is old - Switch & stuff not present in latest versions </h3>
+            <ul>
+                <li> <Link to="/">Home</Link> </li>
+                <li> <Link to="/about">About</Link> </li>
+                <li> <Link to="/users">Users</Link> </li>
+                <li> <Link to="/topics">Topics11</Link> </li>
+            </ul>
+            <button> need to update react-router-dom </button>
+        </nav>
     )
 }
 
 export default function App() {
+    // const navigate = useNavigate();
     return (
         <Router>
             <div>

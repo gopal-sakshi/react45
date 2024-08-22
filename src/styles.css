@@ -92,3 +92,9 @@ body {
     margin-left: 20px;
 }
 
+.border23 {
+    border: 1px solid green;
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+}

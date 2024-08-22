@@ -9,6 +9,9 @@ import routes from "./App";
 import One from "./react-router-dom23/1";
 import AuthExample from './react-router-dom23/auth23';
 
+import { BrowserRouter } from "react-router-dom-v6";
+import RRDv6 from './react-router-dom24/1';
+
 /***********************************************************************/
 
 const root = createRoot(document.getElementById("root"));
@@ -17,7 +20,14 @@ root.render(
         {/* <App /> */}
         {routes}
         {/* <One /> */}
-        {/* <AuthExample /> */}        
+        {/* <AuthExample />         */}
+        
+
+        { /* must be wrapped in BrowserRouter  */ }
+        {/* <BrowserRouter>
+            <RRDv6 />
+        </BrowserRouter> */}
+        
     </StrictMode>
 );
 

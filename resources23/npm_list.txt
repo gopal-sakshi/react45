@@ -1,0 +1,5 @@
+to list all packages in your repo
+
+
+npm list --depth=0
+npm list --depth=1

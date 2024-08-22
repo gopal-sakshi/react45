@@ -1,7 +1,7 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 // import { createBrowserRouter, RouterProvider, Route, Link, } from "react-router-dom";
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom-v5';
 import TicTacToe from './components/others23/tic-tac-toe';
 import Dummy23 from './components/others23/dummy23';
 import Basics23 from './components/others23/basics23';
@@ -38,6 +38,7 @@ import Practice23 from './components/practice_addTasks/entry2';     // uses - re
 import ApiCall23 from './components/common23/apiCall23';
 import ApiCall24 from './components/common23/apiCall24_react-query';
 import ApiCall25 from './components/common23/apiCall25_react-query';
+import ApiCall26 from './components/common23/apiCall26_axios23';
 
 export default <Router>
     <div className="App" >
@@ -76,6 +77,8 @@ export default <Router>
             <Route exact path="/apiCall23" component={ApiCall23}></Route>
             <Route exact path="/apiCall24" component={ApiCall24}></Route>
             <Route exact path="/apiCall25" component={ApiCall25}></Route>
+            <Route exact path="/apiCall26" component={ApiCall26}></Route>
+
             <Route exact path="/">home route babai</Route>
         </Switch>
     </div>
@@ -131,6 +134,7 @@ function Links() {
                 <li><Link to="/apiCall23">ApiCall23</Link></li>
                 <li><Link to="/apiCall24">ApiCall24</Link></li>
                 <li><Link to="/apiCall25">ApiCall25</Link></li>
+                <li><Link to="/apiCall26">ApiCall26</Link></li>
             </ul>
         </div>
     )
