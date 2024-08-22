@@ -5,7 +5,7 @@ export default function Example() {
     const [data, setData] = useState({});    
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
-          .then(response => { setData(response.data); })
+          .then(response => { setData(response?.data || {info: "staticData23"} ); })
           .catch(error => { console.error(error); });
     }, []);
 

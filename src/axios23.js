@@ -2,10 +2,13 @@ import axios from 'axios';
 
 axios.interceptors.request.use(
     config => {
-        const token = localStorageService.getAccessToken()
+        const token = localStorage.getItem('token');
         if (token) {
             config.headers['Authorization'] = 'token23'
+        } else {
+            config.headers['Authorization'] = 'token_ledu_pora'
         }
+        console.log("req interceptor lo unnaa");
         return config
     },
     error => {
@@ -15,7 +18,10 @@ axios.interceptors.request.use(
 
 
 axios.interceptors.response.use(
-    response => { return response },
+    response => { 
+        localStorage.setItem('token', new Date().toISOString())
+        return response 
+    },
     function (error) {
         const originalRequest = error.config
         console.log("1st request fail ayindi, malli try chesko");
