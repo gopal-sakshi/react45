@@ -1,6 +1,7 @@
 import * as React from "react";
-import { createRoot } from "react-dom/client";
-// import { createBrowserRouter, RouterProvider, Route, Link, } from "react-router-dom";
+import Header23 from './App_header';
+import Footer23 from './App_footer';
+
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom-v5';
 import TicTacToe from './components/others23/tic-tac-toe';
 import Dummy23 from './components/others23/dummy23';
@@ -86,56 +87,62 @@ export default <Router>
 
 function Links() {
     return (
-        <div style={{ display:'flex', flexDirection:'row' }}>
-            <ul>
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/tic-tac-toe">tic tac toe</Link> </li>
-                <li> <Link to="/dummy23">Dummy</Link> </li>
-                <li> <Link to="/basics23">Basics23</Link> </li>
-                <li> <Link to="/state-action-view">State_Action_View</Link> </li>
-            </ul>
-            <ul>
-                <li> <Link to="/memo23">memo23</Link> </li>
-                <li> <Link to="/hooks23">Hooks23</Link> </li>
-                <li> <Link to="/rxjs23">Rxjs23</Link> </li>
-            </ul>
-            <ul>
-                <li> <Link to="/interactive11">btn1/hover</Link> </li>
-                <li> <Link to="/interactive12">btn2</Link> </li>
-                <li> <Link to="/interactive13">btn3</Link> </li>
-                <li> <Link to="/interactive14">btn4</Link> </li>
-                <li> <Link to="/state11">state11</Link> </li>
-            </ul>
-            <ul>
-                <li> <Link to="/state12_snapshot">state12 snapshot</Link> </li>
-                <li> <Link to="/state13_snapshot">state13 snapshot</Link> </li>
-                <li> <Link to="/state15_batches">state15 batches</Link> </li>
-                <li> <Link to="/state16_updateObj">state16 update Obj</Link> </li>
-                <li> <Link to="/state19_updateArray1">state19_updateArray1</Link> </li>
-            </ul>
-            <ul>
-                <li> <Link to="/manageState11">manageState11 </Link></li>
-                <li> <Link to="/manageState12">manageState12 </Link></li>
-                <li> <Link to="/react13_form">react13_form </Link></li>
-                <li> <Link to="/react14_lift_state">react14_lift_state </Link></li>
-                <li> <Link to="/react14_sync_ip">react14_sync_ip </Link></li>
-                <li> <Link to="/react14_search23">react14_search23 </Link></li>
-                <li> <Link to="/react14_swap_names">react14_swap_names </Link></li>
-                <li> <Link to="/react14_image">react14_img </Link></li>
-            </ul>
-            <ul>
-                <li> <Link to="/reducer11">reducer11 </Link></li>
-                <li> <Link to="/reducer12">reducer12 </Link></li>
-                <li> <Link to="/reducer13">reducer13 </Link></li>
-                <li> <Link to="/reducer15">reducer15 </Link></li>
-                <li> <Link to="/practice23">practice23 </Link></li>
-            </ul>
-            <ul>
-                <li><Link to="/apiCall23">ApiCall23</Link></li>
-                <li><Link to="/apiCall24">ApiCall24</Link></li>
-                <li><Link to="/apiCall25">ApiCall25</Link></li>
-                <li><Link to="/apiCall26">ApiCall26</Link></li>
-            </ul>
-        </div>
+        <>
+            <Header23 />
+
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <ul>
+                    <li> <Link to="/">Home</Link> </li>
+                    <li> <Link to="/tic-tac-toe">tic tac toe</Link> </li>
+                    <li> <Link to="/dummy23">Dummy</Link> </li>
+                    <li> <Link to="/basics23">Basics23</Link> </li>
+                    <li> <Link to="/state-action-view">State_Action_View</Link> </li>
+                </ul>
+                <ul>
+                    <li> <Link to="/memo23">memo23</Link> </li>
+                    <li> <Link to="/hooks23">Hooks23</Link> </li>
+                    <li> <Link to="/rxjs23">Rxjs23</Link> </li>
+                </ul>
+                <ul>
+                    <li> <Link to="/interactive11">btn1/hover</Link> </li>
+                    <li> <Link to="/interactive12">btn2</Link> </li>
+                    <li> <Link to="/interactive13">btn3</Link> </li>
+                    <li> <Link to="/interactive14">btn4</Link> </li>
+                    <li> <Link to="/state11">state11</Link> </li>
+                </ul>
+                <ul>
+                    <li> <Link to="/state12_snapshot">state12 snapshot</Link> </li>
+                    <li> <Link to="/state13_snapshot">state13 snapshot</Link> </li>
+                    <li> <Link to="/state15_batches">state15 batches</Link> </li>
+                    <li> <Link to="/state16_updateObj">state16 update Obj</Link> </li>
+                    <li> <Link to="/state19_updateArray1">state19_updateArray1</Link> </li>
+                </ul>
+                <ul>
+                    <li> <Link to="/manageState11">manageState11 </Link></li>
+                    <li> <Link to="/manageState12">manageState12 </Link></li>
+                    <li> <Link to="/react13_form">react13_form </Link></li>
+                    <li> <Link to="/react14_lift_state">react14_lift_state </Link></li>
+                    <li> <Link to="/react14_sync_ip">react14_sync_ip </Link></li>
+                    <li> <Link to="/react14_search23">react14_search23 </Link></li>
+                    <li> <Link to="/react14_swap_names">react14_swap_names </Link></li>
+                    <li> <Link to="/react14_image">react14_img </Link></li>
+                </ul>
+                <ul>
+                    <li> <Link to="/reducer11">reducer11 </Link></li>
+                    <li> <Link to="/reducer12">reducer12 </Link></li>
+                    <li> <Link to="/reducer13">reducer13 </Link></li>
+                    <li> <Link to="/reducer15">reducer15 </Link></li>
+                    <li> <Link to="/practice23">practice23 </Link></li>
+                </ul>
+                <ul>
+                    <li><Link to="/apiCall23">ApiCall23</Link></li>
+                    <li><Link to="/apiCall24">ApiCall24</Link></li>
+                    <li><Link to="/apiCall25">ApiCall25</Link></li>
+                    <li><Link to="/apiCall26">ApiCall26</Link></li>
+                </ul>
+            </div>
+
+            <Footer23 />
+        </>
     )
 }

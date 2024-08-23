@@ -1,12 +1,19 @@
 import { useState, createContext, useContext } from "react";
 
+/*
+    useContext
+    - It allows components to consume state or context without the need for prop drilling
+    - provide authentication data to all components without prop drilling
+*/
+
 const UserContext23 = createContext();
 
 export default function Component1() {
-    const [user, setUser] = useState("Jesse Hall");
+    const [user, setUser] = useState("Jesse23");
     return (
         <UserContext23.Provider value={user}>
             <h1>{`Hello ${user}!`}</h1>
+            <button onClick={ () => { setUser(() => "Jesse23" + '__' + Date.now()) } }>changeName</button>
             <Component2 />
         </UserContext23.Provider>
     );
