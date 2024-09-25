@@ -11,6 +11,16 @@ The differences are so minor that you will probably never need to use a Class co
 
 ===============================================================================================
 
+`life cycle methods`
+- constructor()                 when the component is first created.
+- render                        responsible for generating the component's virtual DOM representation based on current props
+- getDerivedStateFromProps      invoked during the mounting & updating phase of a component.
+- componentDidMount             called once the component has been mounted into the DOM             
+- shouldComponentUpdate         called before a component is updated
+- componentWillUpdate, componentDidUpdate, getSnapshotBeforeUpdate
+- componentWillUnmount
+
+<!------------------------------------------------------------------------------------>
 
 Keys allow React to keep track of elements. 
 This way, if an item is updated or removed, only that item will be re-rendered instead of the entire list.

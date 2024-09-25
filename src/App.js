@@ -9,6 +9,7 @@ import Basics23 from './components/others23/basics23';
 import Memo23 from './components/others23/memo23';
 import Hooks23 from './hooks23/hooks23';
 import Rxjs23 from './rxjs23/1';
+import Forms23 from './components/others23/forms23';
 import StateActionView from './components/others23/state-action-view';
 import Button1 from './interactivity23/btn1';
 import Button2 from './interactivity23/btn2';
@@ -74,6 +75,7 @@ export default <Router>
             <Route exact path="/reducer15" component={Reducer15}></Route>
             <Route exact path="/practice23" component={Practice23}></Route>
             <Route exact path="/hooks23" component={Hooks23}></Route>
+            <Route exact path="/forms23" component={Forms23}></Route>
             <Route exact path="/rxjs23" component={Rxjs23}></Route>
             <Route exact path="/apiCall23" component={ApiCall23}></Route>
             <Route exact path="/apiCall24" component={ApiCall24}></Route>
@@ -102,6 +104,7 @@ function Links() {
                     <li> <Link to="/memo23">memo23</Link> </li>
                     <li> <Link to="/hooks23">Hooks23</Link> </li>
                     <li> <Link to="/rxjs23">Rxjs23</Link> </li>
+                    <li> <Link to="/forms23">Forms23</Link> </li>
                 </ul>
                 <ul>
                     <li> <Link to="/interactive11">btn1/hover</Link> </li>

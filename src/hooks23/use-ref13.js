@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
 
 export default function App() {
+    console.log("inputValue change ayindi, malli render ayyaa ", new Date().toISOString() )
     const [inputValue, setInputValue] = useState("");
     const previousInputValue = useRef("");
 

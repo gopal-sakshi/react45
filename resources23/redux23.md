@@ -1,10 +1,23 @@
-Redux 
+Redux  ---> <state-management-platform-library>
 - is a pattern and library for managing & updating global application state
 - the UI triggers events called <actions> to describe what happened
 - separate update logic called <reducers> updates the state in response. 
 - It serves as a centralized store for state 
 - Redux helps you manage `global state` - state that is needed across many parts of your application.
 
+<!---------------------------------------------------------------------------->
+const [counter23, setCounter23] = useState(0)
+- but counter23 is local only to that component
+- but when multiple components need to share & utilize the same state
+- we can resolve by <lifting state up> to parent components, but the method might not always help.
+- REDUX = extracting shared states from the components and putting them outside the component tree at a centralized location. 
+- that centralized location == <store>
+
+<uni directional flow> in Redux
+
+UI triggers (button click)
+actions ---> reducer ---> corresponding value in store is updated
+<!---------------------------------------------------------------------------->
 
 
 created a new folder - redux23
