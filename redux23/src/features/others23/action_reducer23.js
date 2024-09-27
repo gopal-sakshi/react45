@@ -21,7 +21,8 @@ const ActionReducer23 = ({ info23, action23 }) => {
 
 const mapStateToProps = state => { 
     console.log("state ====> ", state)
-    const { reducer23 } = state
+    // const { reducer23 } = state
+    const reducer23 = state.reducer23
     return reducer23
 }
 export default connect(mapStateToProps, { action23 })(ActionReducer23);

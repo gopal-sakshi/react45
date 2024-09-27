@@ -5,7 +5,10 @@ const App = () => {
     const [todos, setTodos] = useState([]);
     
     // const calculation = expensiveCalculation(count);
-    const calculation  = useMemo(() => expensiveCalculation(count), [count]);
+    const calculation  = useMemo(
+        () => expensiveCalculation(count), 
+        [count]     // deps array... only if count changes memoized value is recaptured
+    );
 
     const increment = () => { setCount((c) => c + 1); };
 

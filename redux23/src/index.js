@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-import App from './App';
-import store from './app/store'
+// import App from './App';
+// import store from './app/store'
 
-// import TodoApp from './TodoApp';
-// import store from './app/storeTodo'
+import TodoApp from './TodoApp';
+import store from './app/storeTodo'
 
 import { Provider } from 'react-redux'
 
@@ -15,10 +15,10 @@ root.render(
     <Provider store={store}>
 
         { /* idi basic example ===> increment/decrement functionality */ }
-        <App />
+        {/* <App /> */}
         
         {/* idi todo app example */}
-        {/* <TodoApp /> */}
+        <TodoApp />
     </Provider>
 );
 
