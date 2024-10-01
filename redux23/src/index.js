@@ -7,11 +7,14 @@ import { Provider } from 'react-redux';
 // import App_edokati23 from './App';
 // import store from './app/store';
 
-// import App_edokati23 from './App_Todo';
-// import store from './app/storeTodo';
+import App_edokati23 from './App_Todo';
+import store from './app/storeTodo';
 
-import App_edokati23 from "./App_ecommerce24";
-import store from "./ecommerce24/redux-stuff/cart-store";
+// ============ ecommerce 24 ========> NOT WORKING =========================
+// import App_edokati23 from "./App_ecommerce24";
+// import store from "./ecommerce24/redux-stuff/cart-store";
+
+
 
 /**********************************************************************/
 
