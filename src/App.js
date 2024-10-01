@@ -41,6 +41,9 @@ import ApiCall23 from './components/common23/apiCall23';
 import ApiCall24 from './components/common23/apiCall24_react-query';
 import ApiCall25 from './components/common23/apiCall25_react-query';
 import ApiCall26 from './components/common23/apiCall26_axios23';
+import ReusableForm from './components/common23/reusableFormExample23';
+import Dog23 from './components/common23/Dog23';
+
 
 export default <Router>
     <div className="App" >
@@ -81,7 +84,8 @@ export default <Router>
             <Route exact path="/apiCall24" component={ApiCall24}></Route>
             <Route exact path="/apiCall25" component={ApiCall25}></Route>
             <Route exact path="/apiCall26" component={ApiCall26}></Route>
-
+            <Route exact path="/reusable23" component={ReusableForm}></Route>
+            <Route exact path="/dog23" component={Dog23}></Route>
             <Route exact path="/">home route babai</Route>
         </Switch>
     </div>
@@ -142,6 +146,12 @@ function Links() {
                     <li><Link to="/apiCall24">ApiCall24</Link></li>
                     <li><Link to="/apiCall25">ApiCall25</Link></li>
                     <li><Link to="/apiCall26">ApiCall26</Link></li>
+                </ul>
+                <ul>
+                    <li><Link to="/reusable23">reusable form23</Link></li>
+                    <li><Link to="/dog23">Dog23</Link></li>
+                    {/* <li><Link to="/apiCall25">ApiCall25</Link></li>
+                    <li><Link to="/apiCall26">ApiCall26</Link></li> */}
                 </ul>
             </div>
 

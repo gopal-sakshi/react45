@@ -1,0 +1,23 @@
+{
+    "username": {
+        "label": "Username",
+        "placeholder": "Enter Username",
+        "ref": {},
+        "isInput": true
+    },
+    "password": {
+        "type": "password",
+        "label": "Password",
+        "placeholder": "Enter Password",
+        "ref": {},
+        "isInput": true
+    },
+    "loginButton": {
+        "buttonText": "Login",
+        "isInput": false
+    },
+    "registerButton": {
+        "buttonText": "Register",
+        "isInput": false
+    }
+}
