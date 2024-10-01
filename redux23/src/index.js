@@ -1,27 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 
+/************** App_edokati23 & store *******************************/
 
-// import App from './App';
-// import store from './app/store'
+// import App_edokati23 from './App';
+// import store from './app/store';
 
-import TodoApp from './TodoApp';
-import store from './app/storeTodo'
+// import App_edokati23 from './App_Todo';
+// import store from './app/storeTodo';
 
-import { Provider } from 'react-redux'
+import App_edokati23 from "./App_ecommerce24";
+import store from "./ecommerce24/redux-stuff/cart-store";
+
+/**********************************************************************/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-
-        { /* idi basic example ===> increment/decrement functionality */ }
-        {/* <App /> */}
-        
-        {/* idi todo app example */}
-        <TodoApp />
+        <App_edokati23 />
     </Provider>
 );
-
-/*
-    TodoApp is wrapped in Provider ---> with store passed in as prop
-*/
