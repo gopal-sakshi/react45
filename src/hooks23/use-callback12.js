@@ -22,7 +22,7 @@ function Page() {
     console.log(colors[0])
 
     const handleFilter = useCallback((text) => {
-        console.log("colors prop change aithe ne, ee handleFilter call autundi");
+        console.log("colors prop change aithe ne, ee handleFilter call autundi ", text);
         const filteredColors = allColors.filter((color) =>
             color.includes(text.toLowerCase())
         );

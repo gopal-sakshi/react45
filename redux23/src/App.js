@@ -5,7 +5,7 @@ import UnkoComponent2 from "./features/counter/counter_unkoti2";
 import { useState } from 'react';
 
 function App() {
-    var style24 = {border: '1px dotted red', width: 'fit-content', padding: '5px', margin: '5px'};
+    var style24 = {border: '1px dotted red', width: 'fit-content', padding: '20px', margin: '50px'};
     var [goals23, setGoals23] = useState(0)
     return (
         <div className="App">

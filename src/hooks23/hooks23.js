@@ -13,6 +13,8 @@ import UseRef13 from './use-ref13';
 import UseReducer11 from './use-reducer11';
 import UseCallback11 from './use-callback11';
 import UseCallback12 from './use-callback12';
+import UseCallback13_problem from './use-callback13_problem';
+import UseCallback13 from './use-callback13';
 import UseMemo11 from './use-memo11'
 
 
@@ -43,7 +45,11 @@ export default function() {
             {/* <div style={style23}><UseReducer11 /></div> */}
             
             {/* <div style={style23}><UseCallback11 /></div> */}
-            <div style={style23}><UseCallback12 /></div>
+            {/* <div style={style23}><UseCallback12 /></div> */}
+            <div>
+                <div style={style23}> <UseCallback13_problem /> </div>
+                <div style={style23}> <UseCallback13 /> </div>
+            </div>
             {/* <div style={style23}><UseMemo11 /></div> */}
 
         </>

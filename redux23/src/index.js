@@ -12,7 +12,7 @@ import store from './app/storeTodo';
 
 // ============ ecommerce 24 ========> NOT WORKING =========================
 // import App_edokati23 from "./App_ecommerce24";
-// import store from "./ecommerce24/redux-stuff/cart-store";
+// import store from "./app/store_ecommerce24";
 
 
 
