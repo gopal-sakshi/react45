@@ -9,9 +9,11 @@ const App = () => {
     const incrementCounter = useCallback(() => {
         setCount(count + 1);
     }, [count]);    /* only if count changes ---> "new Fn" is created again  */
+
     const decrementCounter = useCallback(() => {
         setCount(count - 1);
     }, [count]);
+    
     const incrementNumber = useCallback(() => {
         setNumber(number + 1);
     }, [number]);   /* only if number changes, "new Fn" is created again */
@@ -24,7 +26,7 @@ const App = () => {
     return (
         <div>
             <p>Count: {count}</p>
-            <p>Function Count: {funccount.size}</p>
+            <p> Map/Set size === {funccount.size}</p>
             <button onClick={incrementCounter}> Increase </button>
             <button onClick={decrementCounter}> Decrease </button>
             <button onClick={incrementNumber}> Increase number </button>

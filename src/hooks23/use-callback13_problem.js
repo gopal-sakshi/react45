@@ -24,6 +24,7 @@ const App = () => {
             <button onClick={incrementCounter}> Increase </button>
             <button onClick={decrementCounter}> Decrease </button>
             <button onClick={incrementNumber}> increase number </button>
+            <h3> Map/Set size entha ante === { funccount.size } </h3>
         </div>
     )
 }

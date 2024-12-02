@@ -1,5 +1,5 @@
 import React, { useState, useCallback, memo } from 'react';
-const allColors = ['red', 'green', 'blue', 'yellow', 'orange'];
+const allColors = ['red', 'green', 'grey', 'dark red' , 'real23', 'blue', 'yellow', 'orange'];
 
 const shuffle = (array) => {
     const shuffledArray = [...array];
@@ -28,6 +28,14 @@ function Page() {
         );
         setColors(filteredColors);
     }, [colors]);
+
+    const handleFilter22 = (text) => {
+        console.log("colors prop change aithe ne, ee handleFilter call autundi ", text);
+        const filteredColors = allColors.filter((color) =>
+            color.includes(text.toLowerCase())
+        );
+        setColors(filteredColors);
+    };
 
 
     return (
