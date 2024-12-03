@@ -20,6 +20,9 @@ import { useState } from "react";
 import CustomComp1 from "./custom-comp1";
 import CustomComp2 from "./custom-comp2";
 
+import CustomHook11 from "./use-ref-custom1";
+import CustomHook12 from "./use-callback-custom1";
+
 var style23 = {
     border: '1px solid', margin: '5px', padding: '5px', width: 'fit-content' 
 }
@@ -35,12 +38,12 @@ export default function() {
     const [showUseMemo, setUseMemo] = useState(false);
     const [showUseReducer, setUseReducer] = useState(false);
     const [showUseRef, setUseRef] = useState(false);
-    const [showCustomComp, setCustomComp] = useState(false);
+    const [showCustomComp1, setCustomComp1] = useState(false);
 
     return (
         <>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <button onClick = {() => { setCustomComp(!showCustomComp) }}>custom23</button>
+                <button onClick = {() => { setCustomComp1(!showCustomComp1) }}>custom23</button>
                 <button onClick = {() => { setUseCallback(!showUseCallback) }}>useCallback</button>
                 <button onClick = {() => { setUseContext(!showUseContext) }}>useContext</button>
                 <button onClick = {() => { setUseEffect(!showUseEffect) }}>useEffect</button>
@@ -50,7 +53,7 @@ export default function() {
                 <button onClick = {() => { setUseState(!showUseState) }}>useState</button>
             </div>
 
-            { showCustomComp ? customComp23() : '' }
+            { showCustomComp1 ? customComp1() : '' }
             { showUseCallback ? useCallback23() : '' }
             { showUseState ?  <div style={style23}><UseState23 /></div> : ' ' } 
             { showUseEffect ? useEffect23() : '' }
@@ -63,7 +66,7 @@ export default function() {
     )
 }
 
-function customComp23() {
+function customComp1() {
     // const [isHide, setIsHide] = useState(true);                  // ERROR ==== rendered more hooks than previous render
     // setTimeout(() => setIsHide(false), 5000);
     var isHide = true;
@@ -80,10 +83,11 @@ function useCallback23() {
         <>
             <div style={style23}><UseCallback11 /></div>
             <div style={style23}><UseCallback12 /></div>
-            <div>
+            <div style={{display:'flex', flexDirection: 'row'}}>
                 <div style={style23}> <UseCallback13_problem /> </div>
                 <div style={style23}> <UseCallback13 /> </div>
             </div>
+            <div style={style23}> <CustomHook12 /> </div>
         </>
     )
 }
@@ -115,6 +119,7 @@ function useRef23() {
             <div style={style23}><UseRef11 /></div>
             <div style={style23}><UseRef12 /></div>
             <div style={style23}><UseRef13 /></div>
+            <div style={style23}><CustomHook11 /></div>
         </>
     )
 }

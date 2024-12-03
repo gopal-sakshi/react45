@@ -16,19 +16,21 @@ import RRDv6 from './react-router-dom24/1';
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-    <StrictMode>
-        {/* <App /> */}
-        {routes}
-        {/* <One /> */}
-        {/* <AuthExample />         */}
+    <>
+        {/* <StrictMode> */}                            {/* running in strict mode == react renders twice; so disabling it */}
+            {/* <App /> */}
+            {routes}
+            {/* <One /> */}
+            {/* <AuthExample />         */}
         
 
-        { /* must be wrapped in BrowserRouter  */ }
-        {/* <BrowserRouter>
-            <RRDv6 />
-        </BrowserRouter> */}
+            { /* must be wrapped in BrowserRouter  */ }
+            {/* <BrowserRouter>
+                <RRDv6 />
+            </BrowserRouter> */}
         
-    </StrictMode>
+        {/* </StrictMode> */}
+    </>
 );
 
 
