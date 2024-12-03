@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "chrome_subfolder23_localhost23",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "url": "http://localhost:33446",
+            "webRoot": "${workspaceFolder}/vite_project34/src"
+        }
+    ]
+}

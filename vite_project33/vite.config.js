@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig, transformWithEsbuild } from 'vite';
 import react from '@vitejs/plugin-react';
+import treatJsAsJSX from './vite_plugin23';
 
 export default defineConfig({
-    plugins: [react()],
+    plugins: [treatJsAsJSX, react()],
     server: {
         port: 33445,
         open: false,

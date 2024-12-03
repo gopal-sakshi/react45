@@ -9,3 +9,10 @@
 ----------------------------------------------------------------------------
 
 npm create vite@latest
+
+----------------------------------------------------------------------------
+with respect to vite
+- <using js instead of jsx> extension 
+- will not yield optimal performance
+- as it'll go through unnecessary AST transformation
+- https://github.com/vitejs/vite/discussions/3448
